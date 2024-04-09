@@ -1,6 +1,14 @@
 const mongoose = require('mongoose');
 
-const url = `mongodb://mongo:27017/productDB`;
+let url;
+if (process.env.DOCKER_ENV === 'true') {
+    // Running with Docker
+    url = 'mongodb://mongo:27017/productDB';
+} else {
+    // Running without Docker
+    url = 'mongodb://localhost:27017/productDB';
+}
+
 const connectDb = () => {
     mongoose.connect(url)
             .then(() => {

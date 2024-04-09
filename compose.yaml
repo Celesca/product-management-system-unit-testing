@@ -7,6 +7,8 @@ services:
       - 3000:3000
     volumes:
       - ./:/code
+    environment:
+      - DOCKER_ENV=true
   mongo:
     image: mongo
     ports:
@@ -14,4 +16,4 @@ services:
     volumes:
       - mongodb:/data/db
 volumes:
- mongodb:
+  mongodb:

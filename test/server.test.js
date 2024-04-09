@@ -31,7 +31,6 @@ describe('Test request with mongoose', () => {
     });
 
     // GET /products
-
     describe("Test GET /products", async () => {
         it("should return all products", async () => {
             await request(app)
