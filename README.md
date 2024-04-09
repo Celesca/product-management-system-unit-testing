@@ -1,12 +1,13 @@
 ### Product Management System Unit Testing
 
 Product Management System is the backend server that use to manage product.
-In this version, I use the MongoDB to store and manage the data instead of Mocking data with JavaScript object.
+From the previous version, I have already implementing unit tests with Jest.
 
-Thanks to this project I have the opportunities to use MongoDB for first time and writing the unit tests again with Jest
-because I need to mock the data in mongodb right? So I use the Mongo server memory to mock data in unit testing.
+So, in this version I will tried the different test library to implement unit testing.
 
-I also use the Mongoose to connect to MongoDB and arranged the project structure, So it has low coupling and high cohesion.
+#### I use Mocha.js to implement unit testing in this project
+
+Because I already implement the thing they want but that doesn't mean I didn't tried anything new this round!
 
 ### Installation
 
