@@ -22,8 +22,7 @@ You can track the database by open your MongoDBCompass with Uri mongodb://localh
 
 ### Docker
 
-❌ Current unavailable, If I had time, I will come back to implement it.
-
+`docker-compose up --build`
 
 ### API Endpoints Guidelines
 
