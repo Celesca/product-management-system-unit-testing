@@ -36,7 +36,6 @@ describe('Test request with mongoose', () => {
             await request(app)
                 .get("/products")
                 .expect(200)
-                .r
         });
     });
 
